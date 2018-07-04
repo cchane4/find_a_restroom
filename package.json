@@ -1,0 +1,19 @@
+{
+  "name": "find_a_restroom",
+  "version": "1.0.0",
+  "description": "a react based restroom finder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cchane4/find_a_restroom.git"
+  },
+  "author": "Chad Chaney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cchane4/find_a_restroom/issues"
+  },
+  "homepage": "https://github.com/cchane4/find_a_restroom#readme"
+}
