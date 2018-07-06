@@ -1,5 +1,6 @@
 let mongoose = require('mongoose');
 let bodyParser = require('body-parser');
+let path = require('path');
 let express = require('express');
 
 
@@ -12,6 +13,7 @@ let router = express.Router();
 
 
 app.use(express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname, '/')));
 
 
 
@@ -35,4 +37,8 @@ mongoose.connect(db, function(error){
 
 app.listen(PORT, function(){
   console.log("listening on port:" + PORT);
+});
+
+app.get('/', (req, res) => {
+res.sendFile(path.join(__dirname, '/index.html'));
 });
