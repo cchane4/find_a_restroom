@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cchane4/find_a_restroom#readme",
   "dependencies": {
+    "@okta/okta-signin-widget": "^2.3.0",
     "path": "^0.12.7",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
