@@ -11,9 +11,13 @@ let app = express();
 
 let router = express.Router();
 
+let routes = require('./config/routes.js');
 
-app.use(express.static(__dirname + "/public"));
+
+//app.use(express.static(__dirname + "/public"));
 app.use(express.static(path.join(__dirname, '/')));
+app.use('/', routes);
+
 
 
 
@@ -42,3 +46,4 @@ app.listen(PORT, function(){
 app.get('/', (req, res) => {
 res.sendFile(path.join(__dirname, '/index.html'));
 });
+
